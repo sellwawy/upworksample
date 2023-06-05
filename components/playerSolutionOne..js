@@ -18,12 +18,7 @@ export default function Player(props) {
 
 
 
-
-
-
-
   const youtubePlayer =  <ReactPlayer url="https://www.youtube.com/watch?v=2ubIhBZG9NA"
-    className='top-0 left-0 absolute'
     ref={playerOne}
     controls={true}      
     playing={playing}
@@ -36,7 +31,7 @@ export default function Player(props) {
     ref={playerTwo}
     controls 
     autoPlay={false}
-    className="mx-auto max-w-full"
+    className="max-w-full"
     />
 
 
@@ -64,7 +59,7 @@ export default function Player(props) {
       </div>
     </div>
       <div>
-      <div className="pt-[56.25%] relative">
+      <div className="aspect-video">
             {windowObj && youtubePlayer}
         </div>
       </div>
