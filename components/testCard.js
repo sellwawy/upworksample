@@ -21,7 +21,7 @@ export default function TestCard() {
   const widthStyle = {width: String(20) + '%'}
 
   return (
-    <button type="button" onClick={actionOne} className="block bg-gray-200 hover:bg-gray-100 transition duration-150 ease-in-out sm:hover:scale-105 w-full text-left">
+    <div onClick={actionOne} className="block bg-gray-200 hover:bg-gray-100 transition duration-150 ease-in-out sm:hover:scale-105 w-full text-left cursor-pointer">
         <div className="shadow-lg hover:shadow-xl overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md">
             <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
@@ -56,6 +56,6 @@ export default function TestCard() {
         <div className="bg-indigo-200 rounded-full overflow-hidden">
             <div className="h-1 bg-indigo-600 rounded-full" style={widthStyle} />
         </div>
-    </button>
+    </div>
   )
   }
